@@ -7,5 +7,27 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libraries/selenium-java-3.13.0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/libraries/selenium-java-3.13.0" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/libraries/selenium-java-3.13.0" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/libraries/selenium-java-3.13.0" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libraries/selenium-server-standalone-3.13.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
