@@ -5,19 +5,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class findLinksOnGmail {
 
     @Test
     public void testFindLinks(){
+        System.setProperty("webdriver.gecko.driver",
+                "C:\\ZBhims\\SCodes\\Up\\selenium_java\\libraries\\geckodriver.exe");
         //Initialize the browser driver
         WebDriver driver = new FirefoxDriver();
 
-        driver.get("www.gmail.com");
+        driver.get("https://accounts.google.com/");
 
         //Get all the links displayed on the page
         List<WebElement> links = driver.findElements(By.tagName("a"));
@@ -30,5 +30,4 @@ class findLinksOnGmail {
             System.out.println(link.getAttribute("href"));
         }
     }
-
 }
