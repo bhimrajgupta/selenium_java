@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -12,8 +13,10 @@ class findLinksOnGmail {
 
     @Test
     public void testFindLinks(){
+        //Selenium 3.x needs geckodriver to interact with firefox
         System.setProperty("webdriver.gecko.driver",
                 "C:\\ZBhims\\SCodes\\Up\\selenium_java\\libraries\\geckodriver.exe");
+
         //Initialize the browser driver
         WebDriver driver = new FirefoxDriver();
 
@@ -30,4 +33,5 @@ class findLinksOnGmail {
             System.out.println(link.getAttribute("href"));
         }
     }
+
 }
