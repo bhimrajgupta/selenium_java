@@ -32,6 +32,9 @@ class findLinksOnGmail {
         for (WebElement link : links){
             System.out.println(link.getAttribute("href"));
         }
+
+        //Browser close
+        driver.quit();
     }
 
 }
